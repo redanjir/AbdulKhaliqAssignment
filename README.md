@@ -10,3 +10,5 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 
 # References
 Provide the references that you have used to support your assignment. 
+https://stackoverflow.com/questions/8217419/how-to-determine-if-a-javascript-array-contains-an-object-with-an-attribute-that
+https://www.w3schools.com/jsref/jsref_splice.asp
