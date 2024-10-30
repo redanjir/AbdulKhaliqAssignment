@@ -1,7 +1,7 @@
 const SchoolManagement = require('./AbdulKhaliq_School.js');
 
 console.log("Adding new Instructor");
-console.log(SchoolManagement.addInstructor("bob", "asdfsdf"));
+console.log(SchoolManagement.addInstructor("Joe", 30));
 console.log('-----------------------------------------');
 
 console.log("Adding new Student");

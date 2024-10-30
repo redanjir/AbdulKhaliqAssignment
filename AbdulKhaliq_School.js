@@ -4,30 +4,40 @@ const SchoolManagement = {
 
     //Add new instructor to list and return the new list
     addInstructor(instructorName, age){
-        if(!isNaN(age)){ //If age is a number 
-            age = parseInt(age);
+        if(isNaN(age) ){ //If age is a not a number
+            return 'Error: Age is not valid';
+        }else if(instructorList.find(e => e.instructorName === instructorName)){ //If instructorname exists in array
+            return 'Instructor already exists';
+        }
+        else{
+            age = parseInt(age); //Idk if this is needed
             var instructor = {instructorName, age}
             instructorList.push(instructor);
             return instructorList;
-        }else{
-            return 'Error: Enter a valid age';
         }
     },
 
     //Add new class to list and return the new list
     addClass(className){
-        classList.push({className});
-        return classList;
+        if(classList.find(e => e.className === className)){
+            return 'Error: ClassName already exists';
+        }else{
+            classList.push({className});
+            return classList;
+        }
     },
 
     //Add new student to list and return the new list
     addStudent(studentName, age){
-        if(!isNaN(age)){ //If age is a number
+        if(isNaN(age)){ //If age is a number
+            return 'Error: Age is not valid'
+        }else if(studentList.find(e => e.studentName === studentName)){
+            return 'Error: Student already exists'
+        }
+        else{
             var student = {studentName, age}
             studentList.push(student);
             return studentList;
-        }else{
-            return 'Error: Enter a valid age';
         }
     },
 
@@ -44,6 +54,9 @@ const SchoolManagement = {
 
     //Return the student object by index
     getStudentbyIndex(index){
+        if(studentList[index] === undefined){ //If element in array does not exist
+            return 'Enter a valid index';
+        }
         return studentList[index];
     }
 }
