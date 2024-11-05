@@ -6,8 +6,14 @@
 
 ```
 const SchoolManagement = require('./AbdulKhaliq_School.js');
+```
+
+```
 node app.js
 ```
+
+>[!NOTE]
+> I have added some validation for my functions to check if the parameters passed when calling them are valid. 
 
 # Functions
 ## addInstructor
