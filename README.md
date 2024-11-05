@@ -2,65 +2,67 @@
 
 > [!IMPORTANT]
 > First run the node module in the terminal in the base folder
+> Also add the require statement at the top of app.js
 
 ```
+const SchoolManagement = require('./AbdulKhaliq_School.js');
 node app.js
 ```
 
 # Functions
 ## addInstructor
 ```
-addInstructor(instructorName, age)
+SchoolManagement.addInstructor(instructorName, age);
 ```
 
 addInstructor(String, int) function takes in a String of instructorName and an int of age then returns the new list of instructors. An example of calling this function would be.
 
 ```
-addInstructor("Joe", 30);
+SchoolManagement.addInstructor("Joe", 30);
 ```
 
 ## addClass
 ```
-addClass(className)
+SchoolManagement.addClass(className);
 ```
 
 addClass(String) function takes in a String of className and returns the new list of classes. An example of calling this function would be.
 
 ```
-addClass("Introduction to webapi");
+SchoolManagement.addClass("Introduction to webapi");
 ```
 
 ## addStudent
 ```
-addStudent(studentName, age)
+SchoolManagement.addStudent(studentName, age);
 ```
 
 addStudent(String, int) function takes in a String of studentName and an int of age then returns the new list of students. An example of calling this function would be.
 
 ```
-addStudent("Max", 19);
+SchoolManagement.addStudent("Max", 19);
 ```
 
 ## removeStudentByName
 ```
-removeStudentByName(studentName)
+SchoolManagement.removeStudentByName(studentName);
 ```
 
-removeStudentByName(String) function takes in a String of studentName. It then finds the index of the studentName in the student list then removes that student. It then returns the updated student list. An example of calling this function would be.
+removeStudentByName(String) function takes in a String of studentName. It then finds the index of the studentName in the student list then removes that student. It then returns the updated student list. An example of calling this function would be.    
 
 ```
-addStudent("Max"); //Max is an existing student
+SchoolManagement.removeStudentByName("Max"); //Max is an existing student
 ```
 
 ## getStudentbyIndex
 ```
-getStudentbyIndex(index)
+SchoolManagement.getStudentbyIndex(index)
 ```
 
-getStudentbyIndex(int)function takes in a int of index. It then finds the student based on the given index from the student list. It then returns the student object from the student list. An example of calling this function would be.
+getStudentbyIndex(int) function takes in an int of index. It then finds the student based on the given index from the student list. It then returns the student object from the student list. An example of calling this function would be.
 
 ```
-addStudent(1); //E.g: If Max is index 1, it will return student object of Max
+SchoolManagement.getStudentbyIndex(1); //E.g: If Max is index 1, it will return student object of Max
 ```
 
 <!-- You will only need one file, ie, your node module, for this assignment.
@@ -73,5 +75,5 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 
 # References
 Provide the references that you have used to support your assignment. 
-https://stackoverflow.com/questions/8217419/how-to-determine-if-a-javascript-array-contains-an-object-with-an-attribute-that
+https://stackoverflow.com/questions/8217419/how-to-determine-if-a-javascript-array-contains-an-object-with-an-attribute-that </br>
 https://www.w3schools.com/jsref/jsref_splice.asp
