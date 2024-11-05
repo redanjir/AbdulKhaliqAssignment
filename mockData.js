@@ -1,4 +1,4 @@
-// Dummy data for now. I am not sure if I am required to add relationships e.g: one class has many students 
+// Dummy data for now. Am I required to add relationships? e.g: one class has many students 
 
 var instructorList = [
     {instructorName: 'Joe', age: 30}

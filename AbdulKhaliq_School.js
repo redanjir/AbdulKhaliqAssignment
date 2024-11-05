@@ -10,7 +10,7 @@ const SchoolManagement = {
             return 'Instructor already exists';
         }
         else{
-            age = parseInt(age); //Idk if this is needed
+            age = parseInt(age); 
             var instructor = {instructorName, age}
             instructorList.push(instructor);
             return instructorList;
@@ -35,7 +35,7 @@ const SchoolManagement = {
             return 'Error: Student already exists'
         }
         else{
-            age = parseInt(age); //Idk if this is needed
+            age = parseInt(age); 
             var student = {studentName, age}
             studentList.push(student);
             return studentList;
