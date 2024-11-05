@@ -1,8 +1,8 @@
 # How to use this node module
 
 > [!IMPORTANT]
-> First run the node module in the terminal in the base folder
-> Also add the require statement at the top of app.js
+> First add the require statement at the top of app.js </br>
+> Run the node module using the command below
 
 ```
 const SchoolManagement = require('./AbdulKhaliq_School.js');
