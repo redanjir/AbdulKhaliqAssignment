@@ -1,4 +1,11 @@
-# Assignment 1
+# How to use this node module
+
+> [!IMPORTANT]
+> First run the node module in the terminal in the base folder
+
+```
+node app.js
+```
 
 You will only need one file, ie, your node module, for this assignment.
 
