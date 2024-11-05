@@ -12,8 +12,6 @@ const SchoolManagement = require('./AbdulKhaliq_School.js');
 node app.js
 ```
 
->[!NOTE]
-> I have added some validation for my functions to check if the parameters passed when calling them are valid. 
 
 # Functions
 ## addInstructor
@@ -70,6 +68,11 @@ getStudentbyIndex(int) function takes in an int of index. It then finds the stud
 ```
 SchoolManagement.getStudentbyIndex(1); //E.g: If Max is index 1, it will return student object of Max
 ```
+
+
+>[!NOTE]
+> I have added some validation for my functions to check if the parameters passed when calling them are valid. 
+
 
 <!-- You will only need one file, ie, your node module, for this assignment.
 
