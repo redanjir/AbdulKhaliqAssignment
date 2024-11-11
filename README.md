@@ -14,7 +14,7 @@ node app.js
 
 
 # Functions
-## addInstructor
+* addInstructor
 ```
 SchoolManagement.addInstructor(instructorName, age);
 ```
@@ -25,7 +25,7 @@ addInstructor(String, int) function takes in a String of instructorName and an i
 SchoolManagement.addInstructor("Joe", 30);
 ```
 
-## addClass
+* addClass
 ```
 SchoolManagement.addClass(className);
 ```
@@ -36,7 +36,7 @@ addClass(String) function takes in a String of className and returns the new lis
 SchoolManagement.addClass("Introduction to webapi");
 ```
 
-## addStudent
+* addStudent
 ```
 SchoolManagement.addStudent(studentName, age);
 ```
@@ -47,7 +47,7 @@ addStudent(String, int) function takes in a String of studentName and an int of 
 SchoolManagement.addStudent("Max", 19);
 ```
 
-## removeStudentByName
+* removeStudentByName
 ```
 SchoolManagement.removeStudentByName(studentName);
 ```
@@ -58,7 +58,7 @@ removeStudentByName(String) function takes in a String of studentName. It then f
 SchoolManagement.removeStudentByName("Max"); //Max is an existing student
 ```
 
-## getStudentbyIndex
+* getStudentbyIndex
 ```
 SchoolManagement.getStudentbyIndex(index)
 ```
