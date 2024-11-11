@@ -53,7 +53,7 @@ const SchoolManagement = {
         }
     },
 
-    //Remove existing student by list and return the edited list
+    //Remove existing student by name and return the edited list
     removeStudentByName(studentName){
         var index = studentList.indexOf(studentName);
         if(index != -1){ //Indexof returns -1 if it cant find from the list
