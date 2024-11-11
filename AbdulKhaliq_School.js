@@ -53,15 +53,21 @@ const SchoolManagement = {
         }
     },
 
-    //Remove existing student by list and return the edited list
+    //Remove existing student by name and return the edited list
     removeStudentByName(studentName){
-        var index = studentList.indexOf(studentName);
-        if(index != -1){ //Indexof returns -1 if it cant find from the list
-            return console.log('Error: Enter an existing studentName');
+
+        //Finding student that matches the name in the params
+        var foundStudent = studentList.find(student => student.studentName.toLowerCase() === studentName.toLowerCase());
+        
+        if(foundStudent){
+            //Return a new array/list of students without the studentname 
+            var newStudentList = studentList.filter(student => student.studentName.toLowerCase() != studentName.toLowerCase());
+            return console.log(newStudentList);
         }else{
-            studentList.splice(index,1);
-            return console.log(studentList);
-        }
+            return console.log(`Enter an existing student name`);
+        };
+   
+     
     },
 
     //Return the student object by index

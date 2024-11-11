@@ -13,7 +13,7 @@ SchoolManagement.addClass("Introduction to webapi");
 console.log('-----------------------------------------');
 
 console.log("Removing exisitng student by name & return new studentList");
-SchoolManagement.removeStudentByName("Max");
+SchoolManagement.removeStudentByName("KHALIQ");
 console.log('-----------------------------------------');
 
 console.log("Get student by index");
