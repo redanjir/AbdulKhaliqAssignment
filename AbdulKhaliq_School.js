@@ -39,7 +39,7 @@ const SchoolManagement = {
      * @returns {Array} The updated list of classes.
      */
     addClass(className) {
-        if (classList.find(e => e.className === className)) { // Check if className already exists
+        if (classList.find(e => e.className.toLowerCase() === className.toLowerCase())) { // Check if className already exists
             return console.log('Error: ClassName already exists');
         } else {
             classList.push({ className });
