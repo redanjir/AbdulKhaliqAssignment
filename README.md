@@ -1,90 +1,141 @@
 # How to use this node module
 
 > [!IMPORTANT]
-> Node js must be installed on your system </br>
+> `Node.js` must be installed on your system </br>
 > Clone the repository to your project folder
 
 Add this require statement at the top of your app.js
-```
+```js
 const SchoolManagement = require('./AbdulKhaliq_School.js');
 ```
 
 Run this command in the terminal
-```
+```js
 node app.js
 ```
 
+## DATA
+- `instructorList`: array of instructor objects
+- `classList`: array of class objects
+- `studentList`: array of student objects
 
-# Functions
-* addInstructor
+```js
+var instructorList = [
+    {instructorName: 'Joe', age: 30}
+];
+
+var classList = [
+    {className: 'Introduction to OOP'}
+];
+
+var studentList = [
+    {studentName: 'Khaliq', age: 19}
+];
 ```
+
+## Functions
+1. [addInstructor](#addinstructor)
+2. [addClass](#addclass)
+3. [addStudent](#addstudent)
+4. [removeStudentByName](#removestudentbyname)
+5. [getStudentbyIndex](#getstudentbyindex)
+
+### addInstructor
+```js
 SchoolManagement.addInstructor(instructorName, age);
 ```
 
-addInstructor(String, int) function takes in a String of instructorName and an int of age then returns the new list of instructors. An example of calling this function would be.
+**Explanation**:  
+`addInstructor(String, int)` function takes in a `String` of `instructorName` and an `int` of `age` then returns the updated list of instructors.
 
-```
+- `instructorName`: Name of the instructor (`string`)
+- `age`: Age of the instructor (`int`)
+- `returns`: Array of instructor objects
+
+Example:
+```js
 SchoolManagement.addInstructor("Joe", 30);
 ```
 
-* addClass
-```
+---
+
+### addClass
+```js
 SchoolManagement.addClass(className);
 ```
 
-addClass(String) function takes in a String of className and returns the new list of classes. An example of calling this function would be.
+**Explanation**:  
+`addClass(String)` function takes in a `String` of `className` and returns the updated list of classes.
 
-```
+- `className`: Name of the class (`string`)
+- `returns`: Array of class objects
+
+Example:
+```js
 SchoolManagement.addClass("Introduction to webapi");
 ```
 
-* addStudent
-```
+---
+
+### addStudent
+```js
 SchoolManagement.addStudent(studentName, age);
 ```
 
-addStudent(String, int) function takes in a String of studentName and an int of age then returns the new list of students. An example of calling this function would be.
+**Explanation**:  
+`addStudent(String, int)` function takes in a `String` of `studentName` and an `int` of `age` then returns the updated list of students.
 
-```
+- `studentName`: Name of the student (`string`)
+- `age`: Age of the student (`int`)
+- `returns`: Array of student objects
+
+Example:
+```js
 SchoolManagement.addStudent("Max", 19);
 ```
 
-* removeStudentByName
-```
+---
+
+### removeStudentByName
+```js
 SchoolManagement.removeStudentByName(studentName);
 ```
 
-removeStudentByName(String) function takes in a String of studentName. It then finds the index of the studentName in the student list then removes that student. It then returns the updated student list. An example of calling this function would be.    
+**Explanation**:  
+`removeStudentByName(String)` function takes in a `String` of `studentName`, finds the index of the student in the student list, removes that student, and returns the updated student list.
 
-```
-SchoolManagement.removeStudentByName("Max"); //Max is an existing student
-```
+- `studentName`: Name of the student to remove (`string`)
+- `returns`: Array of student objects after the student has been removed
 
-* getStudentbyIndex
-```
-SchoolManagement.getStudentbyIndex(index)
-```
-
-getStudentbyIndex(int) function takes in an int of index. It then finds the student based on the given index from the student list. It then returns the student object from the student list. An example of calling this function would be.
-
-```
-SchoolManagement.getStudentbyIndex(1); //E.g: If Max is index 1, it will return student object of Max
+Example:
+```js
+SchoolManagement.removeStudentByName("Max"); // Max is an existing student
 ```
 
+---
 
->[!NOTE]
-> I have added some validation for my functions to check if the parameters passed when calling them are valid. 
+### getStudentbyIndex
+```js
+SchoolManagement.getStudentbyIndex(index);
+```
 
+**Explanation**:  
+`getStudentbyIndex(int)` function takes in an `int` of `index`, finds the student based on the given index from the student list, and returns the student object at that index.
 
-<!-- You will only need one file, ie, your node module, for this assignment.
+- `index`: The index of the student in the list (`int`)
+- `returns`: The student object at the given index
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
+Example:
+```js
+SchoolManagement.getStudentbyIndex(1); // If Max is at index 1, it will return Max's student object
+```
 
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
+---
 
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax -->
+>[!NOTE]  
+> I have added some validation for my functions to check if the parameters passed when calling them are valid.
 
 # References
 Provide the references that you have used to support your assignment. 
-https://stackoverflow.com/questions/8217419/how-to-determine-if-a-javascript-array-contains-an-object-with-an-attribute-that </br>
-https://www.w3schools.com/jsref/jsref_splice.asp
+- https://stackoverflow.com/questions/8217419/how-to-determine-if-a-javascript-array-contains-an-object-with-an-attribute-that
+- https://www.w3schools.com/jsref/jsref_splice.asp
