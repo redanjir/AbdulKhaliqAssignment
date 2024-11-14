@@ -1,13 +1,15 @@
 # How to use this node module
 
 > [!IMPORTANT]
-> First add the require statement at the top of app.js </br>
-> Run the node module using the command below
+> Node js must be installed on your system </br>
+> Clone the repository to your project folder
 
+Add this require statement at the top of your app.js
 ```
 const SchoolManagement = require('./AbdulKhaliq_School.js');
 ```
 
+Run this command in the terminal
 ```
 node app.js
 ```
